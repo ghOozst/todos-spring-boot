@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<div>Your password is</div>
+			<h1>Your Todos</h1>
 			<table  class="table">
 				<thead>
 					<tr>
@@ -27,6 +27,7 @@
 					</c:forEach>
 				</tbody>
 			</table>
+			<a href="add-todo" class="btn btn-success">Add Todo</a>
 		</div>
 	</body>
 		<script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
