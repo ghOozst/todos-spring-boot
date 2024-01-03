@@ -2,9 +2,12 @@ package com.in28minutes.springboot.myfirstwebapp.todo;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.Size;
+
 public class Todo {
 	private long id;
 	private String username;
+	@Size(min=10, message = "Descripition field must have at least 10 caracters")
 	private String description;
 	private LocalDate targetDate;
 	private boolean done;
